@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>input validation</title>
+  
+</head>
+<body>
+  
+     <p>Enter a number b/n 1 and 100:</p>
+     <input type="number" id="demo" maxlength="13" ondragstart="1000">
+     <input type="submit" onclick="manage()" value="submit">
+     <p id="display"></p>
+    <script type="text/javascript">
+       function manage(){
+        var x,text;
+        x=document.getElementById('demo').value;
+        if (x<0){
+          text="the number you entered is negative number, please enter positive number";
+        }
+        else if(x.length>13 || x.length<13) {
+               
+          text="Error,Please enter a 13 length number fill the box";
+        } 
+              
+        else{
+          text="Your account number is:"+x;
+        }
+        document.getElementById('display').innerHTML=text;
+       }
+      
+     </script>
+</body>
+</html>

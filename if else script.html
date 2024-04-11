@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <img id="demo" onclick="change_image()" src="shwaye.png" width="100px">
+    <script>
+       function change_image(){
+        var image=document.getElementById('demo');
+        if(image.src.match('class.png')){
+            image.src="class.png";
+        }
+        else{
+            image.src="angesom.png";
+        }
+       } 
+    </script>
+</body>
+</html>

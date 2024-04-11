@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <script>
+    	var i,total_sum=0;
+    	var number=[56,78,43,89,54,78,34,23,12,78];
+    	var students_name= new Array("angesom","hailu","mola");
+    	number.push(78);
+    	number.splice(1,3,100,200);
+        number.shift();
+    	number.pop();
+         for (i in number){
+         	number[i];
+         	total_sum+=number[i];
+         }
+    	document.write("total="+total_sum);
+    	document.write("</br>");
+    	document.write(students_name);
+    	document.write("</br>");
+    	document.write(students_name[2].concat(number[2]));
+    </script>
+</body>
+</html>

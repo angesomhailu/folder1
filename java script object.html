@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id='logo'></p>
+    <script type="text/javascript">
+    	var person={firstName:"angesom",age:24};
+    	document.getElementById('demo').innerHTML=person.firstName + " is " + person.age +" years old. "
+
+    	var x,y;
+    	var car={Name:"fiat",Model:24,production_date=2024};
+    	for(x in car){
+    		y=car[x];
+        document.getElementById('logo').innerHTML=y;
+    	}
+    </script>
+</body>
+</html>

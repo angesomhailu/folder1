@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> </title>
+</head>
+<body>
+   <p id="demo">please extract the name ANGESOM from this statement</p>     
+     
+     <button onclick="display_sub_string()">Click Here to replace</button>
+    <p id="get"></p>
+     <script>
+       function display_sub_string(){
+         var display,position1,position2,str;
+         str=document.getElementById("demo").innerHTML;
+         position1=str.indexOf("A");//24
+         position2=str.indexOf("M");//30
+         display=str.substring(position1,position2);
+         document.getElementById('get').innerHTML=display;
+       }
+     
+     </script>
+</body>
+</html>

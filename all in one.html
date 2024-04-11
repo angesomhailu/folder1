@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+  <p id="yes" ></p>
+  <p id="no"></p>
+  <script type="text/javascript">
+  	var yes=67,no=57;
+  	document.getElementById("yes").innerHTML=no;
+  	document.getElementById("no").innerHTML="=====================";
+  	var n=10;
+  	for(var i=1;i<=n;i++){
+          if(i%2==0){          	
+          	document.write(i+": is even number </br>");
+          }
+          else{        
+          	document.write(i+": is odd number </br>");
+          }
+  	}
+     var sum=0,i=1;
+  	while(i<n){
+     sum+=i;
+     i++;
+  	}
+  	document.write("the sum is:"+sum+"</br>");
+  	document.write("=======================<br>");
+  	var fact=1,i=1;
+  	do{
+  		fact=fact*i;
+  		i++;
+  	}while(i<n);
+    document.write("the factorial is:"+fact+"</br>");
+    document.write("=======================<br>");
+    //var number;
+    switch(8){
+    case 1: document.write("gray"); break;
+    case 2: document.write("ange"); break;
+    case 3: document.write("shwaye"); break;
+    case 4: document.write("nati"); break;
+    case 5: document.write("mola"); break;
+    case 6: document.write("awe"); break;
+    default : document.write("invalid input </br>");
+    }
+         document.write("=======================<br>");
+         var student={first_name:"angesom",last_name:"hailu",id:"ugr/172185/12",department:"software_engineering"};
+         var x,y;
+         for (x in student) {
+           y=student[x];
+        document.write(y);   
+         }
+
+    document.write("</br>=======================<br>");
+         
+      dog=new human("angesom","hailu","ugr/172185/12","software_engineering");   
+     function human(first_name,last_name,id,department){
+      document.write("hey iam angesom hailu from software engineering! </br>");
+        this.name=first_name;
+        this.lname=last_name;
+        this.id_number=id;
+        this.dep=department;
+      } 
+      document.write(dog.name,dog.lname,dog.id_number,dog.dep);
+      document.write("</br>=======================<br>");
+      
+      string="hey how are you!";
+      for(i in string){
+      	j=string[i];
+      	document.write(j);
+      }
+  </script>
+</body>
+</html>

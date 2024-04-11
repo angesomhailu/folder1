@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+   <script type="text/javascript">
+   
+ var i,j,total_sum=0;
+ student={first_name:"angesom",last_name:"hailu",id:"ugr/172185/12",department:"software"};
+ for (i in student){
+	j=student[i];
+	document.write(i+"==>"+j+"</br>");
+}
+  document.write("=========================</br>");
+   salary={abebe:3666,angesom:5498,mere:54789,awet:76879};
+    for(i in salary){
+       
+       total_sum=total_sum+salary[i];
+       j=salary[i]; 
+         document.write(i+"==>"+j+"</br>");
+    }
+    document.write("</br> total_sum="+total_sum);
+    document.write("</br>=========================</br>");
+    string="ANGESOM HAILU BAHRE";
+    for(i in string){
+    	j=string[i];
+    	document.write(j+",");
+    }
+
+ 
+   </script>
+
+</body>
+</html>
